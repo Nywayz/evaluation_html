@@ -1,0 +1,142 @@
+@import 'reset';
+$cotes: lightgrey;
+$rougefoncer: #810426;
+@font-face {
+    font-family: 'bertina';
+    src: url('../fonts/BerninaSans-Web-CondensedBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  background-color: $cotes;
+  color: #00455a;
+  text-align: center;
+  font-family: 'bertina';
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+.fond {
+  position: relative;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 466px;
+}
+
+.froid {
+  color: white;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.c1 {
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+
+.bouton {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.h1 {
+  padding: 20px 0px;
+  font-size: 2em;
+}
+
+.p {
+  margin: 20px 0px;
+
+}
+
+.ICE {
+  text-align: left;
+  opacity: 0.8;
+  padding: 20px 0px;
+}
+
+.ronds {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.trucrouge {
+  color: white;
+  width: 200px;
+  padding: 0.5em;
+  transform: rotate(30deg);
+  background-color: $rougefoncer;
+  border-radius: 10%;
+  position: absolute;
+  top: 75px;
+  right: 25px;
+}
+
+@media (min-width:466px) {
+  .flexbox1{
+    justify-content: space-around;
+    flex-wrap: wrap;
+      display: flex;
+  }
+
+  .c2{
+    width: 50%;
+    height: 50%;
+  }
+
+  .o1{
+    order: 3;
+  }
+
+  .o2{
+    order: 2;
+  }
+
+  .o3{
+    order: 1;
+  }
+
+
+  .droite{
+    text-align: right;
+
+  }
+
+  .gauche{
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .part2{
+    width: 58%;
+    margin: 0 auto;
+  }
+
+  .c2{
+    width: 33%;
+    height: 33%;
+  }
+
+  .ICE {
+    text-align: right;
+  }
+}
+
+
+
+//parent en flex, largeur comme on veut et wrap pour les mettre dans l'ordre.
